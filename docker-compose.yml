@@ -8,7 +8,7 @@ services:
     ports:
       - "5173:5173"    
   backend:
-    image: vijayvenkatj/campusconnect-backend:latest
+    image: vijayvenkatj/campusconnect-backend-dev:latest
     restart: always
     ports:
       - "5000:5000"
