@@ -38,6 +38,10 @@ jobs:
           platforms: linux/amd64,linux/arm64
           tags: vijayvenkatj/campusconnect-backend:latest
           build-args: |
+            PORT=${{ secrets.PORT }}
+            BACKEND_URL=${{ secrets.BACKEND_URL }}
+            FRONTEND_URL=${{ secrets.FRONTEND_URL }}
+            REDIRECT_URL=${{ secrets.REDIRECT_URL }}
             CLIENT_ID=${{ secrets.CLIENT_ID }}
             CLIENT_SECRET=${{ secrets.CLIENT_SECRET }}
             JWT_SECRET_KEY=${{ secrets.JWT_SECRET_KEY }}
